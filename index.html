@@ -1,37 +1,25 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Development-tips : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Development-tips</title>
+    <meta charset="UTF-8">
+    <title>Development-tips by IntelliJPluginDevJP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Development-tips</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/IntelliJPluginDevJP/development-tips" class="btn">View on GitHub</a>
+      <a href="https://github.com/IntelliJPluginDevJP/development-tips/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/IntelliJPluginDevJP/development-tips/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/IntelliJPluginDevJP/development-tips">View on GitHub</a>
-
-          <h1 id="project_title">Development-tips</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/IntelliJPluginDevJP/development-tips/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/IntelliJPluginDevJP/development-tips/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
+    <section class="main-content">
+      <h3>
 <a id="公式ドキュメント" class="anchor" href="#%E5%85%AC%E5%BC%8F%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>公式ドキュメント</h3>
 
 <ul>
@@ -87,18 +75,80 @@
 </ul>
 </li>
 </ul>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Development-tips maintained by <a href="https://github.com/IntelliJPluginDevJP">IntelliJPluginDevJP</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+<h3>
+<a id="qa" class="anchor" href="#qa" aria-hidden="true"><span class="octicon octicon-link"></span></a>Q&amp;A</h3>
+
+<ul>
+<li>
+<p>Q:HowTo的なドキュメントはどこ？</p>
+
+<ul>
+<li>A:公式以外あまり無い。</li>
+<li>A:OpenAPIのフォーラムは親切。1日くらいで回答付く（<a href="https://devnet.jetbrains.com/community/idea/open_api_and_plugin_development%EF%BC%89">https://devnet.jetbrains.com/community/idea/open_api_and_plugin_development）</a>
+</li>
+<li>A:とにかく他の人のコードを見る</li>
+</ul>
+</li>
+<li><p>Q:これ(Javaの解析ツール)をプラグイン化したい(<a href="https://github.com/yusuke" class="user-mention">@yusuke</a>) → <a href="http://samuraism.jp/samurai/">http://samuraism.jp/samurai/</a></p></li>
+<li><p>Q:Java 8以降縛りとかにしてもok?</p></li>
+<li>
+<p>Q:scalaでplugin作りたい！</p>
+
+<ul>
+<li>ファイルがjavaファイルになってしまうけどrenameするしかないの？</li>
+</ul>
+</li>
+<li>
+<p>Q:テストはどうすればいい？</p>
+
+<ul>
+<li>いろいろ制約があって難易度高い</li>
+<li>ちゃんとやってるプロジェクトが少ない</li>
+</ul>
+</li>
+<li>
+<p>Q:ダイアログのカスタマイズする方法（<a href="https://github.com/androhi" class="user-mention">@androhi</a>）</p>
+
+<ul>
+<li>A:割りきってSwingで構築する手もある</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="tips" class="anchor" href="#tips" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tips</h3>
+
+<ul>
+<li><p>DialogWrapperを使ってダイアログを表示するときは必ずsetTitle()でタイトルを入れたほうがいい。（最悪実装した処理が正常に動きませんでした）</p></li>
+<li><p>plugin.xmlのidea-pluginタグにurlを設定すると、Plugin Repositoryのページにwebsiteという項目が追加できる</p></li>
+<li>
+<p>Android Studiointe 用の Plugin 開発時に起動するエディタを Android Studio にする方法</p>
+
+<ol>
+<li>New… をクリックする</li>
+<li>アプリケーションの下の Android Studio を指定する</li>
+<li>Java SDK を 1.6 にする</li>
+<li>Android Studio を Project SDK に選んで IntelliJ Platform Plugin プロジェクトを作成</li>
+<li>Run する</li>
+<li>Android Studio が立ち上がる
+
+<ul>
+<li>sdkのインストールウィザードが立ち上がるが無視して大丈夫っぽい</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/IntelliJPluginDevJP/development-tips">Development-tips</a> is maintained by <a href="https://github.com/IntelliJPluginDevJP">IntelliJPluginDevJP</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-    
+    </section>
 
+  
   </body>
 </html>
