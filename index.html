@@ -122,51 +122,39 @@
 <ul>
 <li><p>DialogWrapperを使ってダイアログを表示するときは必ずsetTitle()でタイトルを入れたほうがいい。（最悪実装した処理が正常に動きませんでした）</p></li>
 <li><p>plugin.xmlのidea-pluginタグにurlを設定すると、Plugin Repositoryのページにwebsiteという項目が追加できる</p></li>
-<li>
-<p>Android Studiointe 用の Plugin 開発時に起動するエディタを Android Studio にする方法</p>
-
-<ol>
-<li>新規 Plugin 作成ウィザードで SDK 選択のときに、<strong>New…</strong> をクリックする</li>
-</ol>
-</li>
+<li><p>Android Studiointe 用の Plugin 開発時に起動するエディタを Android Studio にする方法</p></li>
 </ul>
 
-<p><img src="https://raw.githubusercontent.com/IntelliJPluginDevJP/development-tips/gh-pages/plugin_tips_1.png" alt="step1"></p>
+<h5>
+<a id="1-新規-plugin-作成ウィザードで-sdk-選択のときにnew-をクリックする" class="anchor" href="#1-%E6%96%B0%E8%A6%8F-plugin-%E4%BD%9C%E6%88%90%E3%82%A6%E3%82%A3%E3%82%B6%E3%83%BC%E3%83%89%E3%81%A7-sdk-%E9%81%B8%E6%8A%9E%E3%81%AE%E3%81%A8%E3%81%8D%E3%81%ABnew-%E3%82%92%E3%82%AF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%99%E3%82%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. 新規 Plugin 作成ウィザードで SDK 選択のときに、<strong>New…</strong> をクリックする</h5>
 
-<ol>
-<li>アプリケーションの下の Android Studio を指定する</li>
-</ol>
+<p><img src="https://raw.githubusercontent.com/IntelliJPluginDevJP/development-tips/gh-pages/images/plugin_tips_1.png" alt="step1"></p>
 
-<p><img src="https://raw.githubusercontent.com/IntelliJPluginDevJP/development-tips/gh-pages/plugin_tips_2.png" alt="step2"></p>
+<h5>
+<a id="2-アプリケーションの下の-android-studio-を指定する" class="anchor" href="#2-%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E4%B8%8B%E3%81%AE-android-studio-%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. アプリケーションの下の Android Studio を指定する</h5>
 
-<ol>
-<li>Java SDK を 1.6 にする</li>
-</ol>
+<p><img src="https://raw.githubusercontent.com/IntelliJPluginDevJP/development-tips/gh-pages/images/plugin_tips_2.png" alt="step2"></p>
 
-<p><img src="https://raw.githubusercontent.com/IntelliJPluginDevJP/development-tips/gh-pages/plugin_tips_3.png" alt="step3"></p>
+<h5>
+<a id="3-java-sdk-を-16-にする" class="anchor" href="#3-java-sdk-%E3%82%92-16-%E3%81%AB%E3%81%99%E3%82%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Java SDK を 1.6 にする</h5>
 
-<ol>
-<li>Android Studio を Project SDK に選んで IntelliJ Platform Plugin プロジェクトを作成</li>
-</ol>
+<p><img src="https://raw.githubusercontent.com/IntelliJPluginDevJP/development-tips/gh-pages/images/plugin_tips_3.png" alt="step3"></p>
 
-<p><img src="https://raw.githubusercontent.com/IntelliJPluginDevJP/development-tips/gh-pages/plugin_tips_4.png" alt="step4"></p>
+<h5>
+<a id="4-android-studio-を-project-sdk-に選んで-intellij-platform-plugin-プロジェクトを作成" class="anchor" href="#4-android-studio-%E3%82%92-project-sdk-%E3%81%AB%E9%81%B8%E3%82%93%E3%81%A7-intellij-platform-plugin-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%82%92%E4%BD%9C%E6%88%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Android Studio を Project SDK に選んで IntelliJ Platform Plugin プロジェクトを作成</h5>
 
-<ol>
-<li>Run する</li>
-</ol>
+<p><img src="https://raw.githubusercontent.com/IntelliJPluginDevJP/development-tips/gh-pages/images/plugin_tips_4.png" alt="step4"></p>
 
-<p><img src="https://raw.githubusercontent.com/IntelliJPluginDevJP/development-tips/gh-pages/plugin_tips_5.png" alt="step5"></p>
+<h5>
+<a id="5-run-する" class="anchor" href="#5-run-%E3%81%99%E3%82%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>5. Run する</h5>
 
-<ol>
-<li>Android Studio が立ち上がる
+<h5>
+<a id="6-android-studio-が立ち上がる" class="anchor" href="#6-android-studio-%E3%81%8C%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%8C%E3%82%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>6. Android Studio が立ち上がる</h5>
 
-<ul>
-<li>AndroidSDK のインストールウィザードが立ち上がるが無視して大丈夫っぽい</li>
-</ul>
-</li>
-</ol>
+<h6>
+<a id="androidsdk-のインストールウィザードが立ち上がるが無視して大丈夫っぽい" class="anchor" href="#androidsdk-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%82%A6%E3%82%A3%E3%82%B6%E3%83%BC%E3%83%89%E3%81%8C%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%8C%E3%82%8B%E3%81%8C%E7%84%A1%E8%A6%96%E3%81%97%E3%81%A6%E5%A4%A7%E4%B8%88%E5%A4%AB%E3%81%A3%E3%81%BD%E3%81%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>AndroidSDK のインストールウィザードが立ち上がるが無視して大丈夫っぽい</h6>
 
-<p><img src="https://raw.githubusercontent.com/IntelliJPluginDevJP/development-tips/gh-pages/plugin_tips_6.png" alt="step6"></p>
+<p><img src="https://raw.githubusercontent.com/IntelliJPluginDevJP/development-tips/gh-pages/images/plugin_tips_5.png" alt="step5"></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/IntelliJPluginDevJP/development-tips">Development-tips</a> is maintained by <a href="https://github.com/IntelliJPluginDevJP">IntelliJPluginDevJP</a>.</span>
